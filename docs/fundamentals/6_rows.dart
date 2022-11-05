@@ -6,9 +6,7 @@ void main() => runApp(MaterialApp(home: Home()));
 class Home extends StatelessWidget {
   const Home({super.key});
 
-  void doSomething() {
-    // print('Button was clicked!');
-  }
+  void doSomething() {}
 
   @override
   Widget build(BuildContext context) {
@@ -18,20 +16,27 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.amber[400],
       ),
-      body: Center(
-          child: const Text(
-        'HELLO WORLD',
-        style: TextStyle(
-            fontFamily: 'Raleway',
-            fontSize: 20.0,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 4.0,
-            color: Colors.grey),
-      )),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: [
+          Image.asset(
+            'lib/assets/images/spalding.jpg',
+            height: 300.0,
+          ),
+          Image.asset(
+            'lib/assets/images/molten.jpg',
+            height: 320.0,
+          ),
+          Image.asset(
+            'lib/assets/images/wilson.jpg',
+            height: 250.0,
+          )
+        ],
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: doSomething,
         backgroundColor: Colors.amber,
-        // child: Text('Click', textAlign: TextAlign.center),
         child: Icon(Icons.add),
       ),
     );

@@ -1,0 +1,113 @@
+FLUTTER NOTES
+
+URL:
+- Cookbook: https://docs.flutter.dev/cookbook
+- Flutter API: https://api.flutter.dev
+- Flutter Packages: https://pub.dev/flutter 
+- Net Ninja Tutorial: https://github.com/iamshaunjp/flutter-beginners-tutorial 
+- Flutter & MongoDB: https://levelup.gitconnected.com/mongodb-with-flutter-407de79f84e4
+- Flutter & MongoDB: https://www.mongodb.com/docs/atlas/app-services/tutorial/flutter/
+- DartPad: https://dartpad.dev/
+- Deployment (Google Play Store): https://docs.flutter.dev/deployment/android
+- Deployment (Firebase): https://medium.com/flutter/must-try-use-firebase-to-host-your-flutter-app-on-the-web-852ee533a469 
+- Deployment (Firebase): https://blog.bitrise.io/post/build-and-deploy-flutter-web-app-firebase 
+
+Commands:
+- flutter upgrade
+- flutter doctor
+- flutter create <app_name>
+- flutter run <app_name>
+- create virtual device (android studio)
+- install vscode plugins
+	- Flutter
+	- Dart
+
+OVERVIEW:
+- Flutter - Google UI Mobile Framework for building mobile and web apps in Android and iOS platforms
+
+- Widget - immutable class in Flutter that is used to build your UI
+
+- Data Types:
+	- Number (int and double)
+	- Boolean (bool)
+	- String
+	- List
+	- Map
+	- var and dynamic
+
+- Accessing variables
+	- '$student'
+	- '${student["name"]}' <-- if you are using dot or bracket notation
+	- Text(student) <-- direct if w/o quotes
+
+- MaterialApp
+	home - landing page
+
+Widgets:
+	- Scaffold - wrapper to layout widgets
+		appBar: AppBar
+		body:
+		floatingActionButton:
+	- AppBar
+	- Text
+	- Image
+	- Container
+	- Icon
+	- FloatingActionButton
+	- Card
+	- ElevatedButton
+	- SizedBox
+	- Center
+	- Row
+	- Column
+	- Expanded (like Flex)
+	- ListView Builder
+	- CircleAvatar
+	- Scrollbar
+
+- Colors & Fonts
+		- https://m2.material.io/design/color/the-color-system.html#tools-for-picking-colors
+		- pubspec.yaml
+
+stless 	- stateless to be able to maximize hot reload
+	   	- build only runs once
+stful  	- stateful widget
+		- setState() rebuilds function
+		- initState() runs first and only called once widget is created
+		- build() builds the widget tree. triggered everytime we setState()
+		- dispose() when widget is removed
+
+- Flutter Outline and Shortcuts in VSCode
+
+- Custom Import --> import 'package:flutter_app/demo.dart';
+
+- Routing
+	- MaterialApp(initialRoute: '', routes: {})
+	- Navigator.pushNamed(context, '', arguments: {}); <-- push page on top of the origin page
+	- Navigator.pushReplacementNamed(context, '', arguments: { <pass parameters here> }); <-- push page but replaced the origin page
+	- ModalRoute.of(context).settings.argument <-- get all the pass parameters on next page
+	- Navigator.pop(context, { <data params> });
+
+- async, await and Future
+	- Future<void> doSomething() async {} <-- return Future if the function will return a promise
+
+- Flutter Packages: https://pub.dev/flutter
+	- http (flutter pub add http) or add in pubspec.yaml
+	- spinkit 
+
+
+=====
+Basics
+Routing
+Forms
+Https and Database API & CRUD
+Authorization & Authentication
+Deployment
+Testing
+
+splash screen
+event List
+event details
+about/profile
+
+
