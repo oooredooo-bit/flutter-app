@@ -12,6 +12,14 @@ URL:
 - Deployment (Firebase): https://medium.com/flutter/must-try-use-firebase-to-host-your-flutter-app-on-the-web-852ee533a469 
 - Deployment (Firebase): https://blog.bitrise.io/post/build-and-deploy-flutter-web-app-firebase 
 
+HOW TO SETUP:
+1. Download Flutter and put to your preferred directory
+2. Add to your environment variables
+3. Install Android studio
+4. Install Visual Studio and select Development for C++
+5. Run flutter doctor
+6. Install extensions for VSCode
+
 Commands:
 - flutter upgrade
 - flutter doctor
@@ -62,7 +70,7 @@ Widgets:
 	- Column
 	- Expanded (like Flex)
 	- ListView Builder
-	- CircleAvatar
+	- CircleAvataN
 	- Scrollbar
 
 - Colors & Fonts
@@ -104,8 +112,10 @@ Https and Database API & CRUD
 Authorization & Authentication
 Deployment
 Testing
+=====
 
 splash screen
+home
 event List
 event details
 about/profile
